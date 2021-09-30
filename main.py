@@ -1,6 +1,6 @@
 import requests
 
-URL = "https://realpython.com"
+URL = "https://echdesign.co.uk"
 
 page = requests.get(URL)
 
