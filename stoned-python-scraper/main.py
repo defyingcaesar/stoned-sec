@@ -61,7 +61,7 @@ def run(arg, URL = '', parser = 'html.parser', content = ''):
     if(arg == 0):
         content = requests.get(URL)
         soup = BeautifulSoup(content.text, parser)
-        row = soup.find('tr') # Extract and return first occurrence of tr
+        row = soup.find('.') # Extract and return first occurrence of tr
         print(row)            # Print row with HTML formatting
         print("=========Text Result==========")
         print(row.get_text()) # Print row as text

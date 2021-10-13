@@ -1,0 +1,100 @@
+[
+    {
+      "primary_asset_contracts": [
+        {
+          "address": "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
+          "asset_contract_type": "non-fungible",
+          "created_date": "2019-05-08T21:59:29.327544",
+          "name": "ENS",
+          "nft_version": "3.0",
+          "opensea_version": null,
+          "owner": 279872,
+          "schema_name": "ERC721",
+          "symbol": "ENS",
+          "total_supply": null,
+          "description": "Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.",
+          "external_link": "https://ens.domains",
+          "image_url": "https://lh3.googleusercontent.com/0cOqWoYA7xL9CkUjGlxsjreSYBdrUBE0c6EO1COG4XE8UeP-Z30ckqUNiL872zHQHQU5MUNMNhfDpyXIP17hRSC5HQ=s60",
+          "default_to_fiat": false,
+          "dev_buyer_fee_basis_points": 0,
+          "dev_seller_fee_basis_points": 0,
+          "only_proxied_transfers": false,
+          "opensea_buyer_fee_basis_points": 0,
+          "opensea_seller_fee_basis_points": 250,
+          "buyer_fee_basis_points": 0,
+          "seller_fee_basis_points": 250,
+          "payout_address": null
+        }
+      ],
+      "traits": {
+        "Length": {
+          "min": 3,
+          "max": 10000
+        },
+        "Expiration Date": {
+          "min": 1588550400,
+          "max": 4829262331
+        },
+        "Registration Date": {
+          "min": 1580763488,
+          "max": 1634156724
+        }
+      },
+      "stats": {
+        "one_day_volume": 7.37949999999999,
+        "one_day_change": -0.9051112109060213,
+        "one_day_sales": 49,
+        "one_day_average_price": 0.15060204081632633,
+        "seven_day_volume": 547.238531333931,
+        "seven_day_change": 7.480880680992433,
+        "seven_day_sales": 242,
+        "seven_day_average_price": 2.2613162451815327,
+        "thirty_day_volume": 727.892589371611,
+        "thirty_day_change": 0.329089369970023,
+        "thirty_day_sales": 690,
+        "thirty_day_average_price": 1.0549167961907406,
+        "total_volume": 9372.6717818693,
+        "total_sales": 13037,
+        "total_supply": 281762,
+        "count": 281762,
+        "num_owners": 103537,
+        "average_price": 0.7189285711336427,
+        "num_reports": 79,
+        "market_cap": 637152.9878748391,
+        "floor_price": 0.002
+      },
+      "banner_image_url": null,
+      "chat_url": null,
+      "created_date": "2019-05-08T21:59:36.282454",
+      "default_to_fiat": false,
+      "description": "Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.",
+      "dev_buyer_fee_basis_points": "0",
+      "dev_seller_fee_basis_points": "0",
+      "discord_url": null,
+      "display_data": {
+        "card_display_style": "cover"
+      },
+      "external_url": "https://ens.domains",
+      "featured": false,
+      "featured_image_url": "https://lh3.googleusercontent.com/BBj09xD7R4bBtg1lgnAAS9_TfoYXKwMtudlk-0fVljlURaK7BWcARCpkM-1LGNGTAcsGO6V1TgrtmQFvCo8uVYW_QEfASK-9j6Nr=s300",
+      "hidden": false,
+      "safelist_request_status": "verified",
+      "image_url": "https://lh3.googleusercontent.com/0cOqWoYA7xL9CkUjGlxsjreSYBdrUBE0c6EO1COG4XE8UeP-Z30ckqUNiL872zHQHQU5MUNMNhfDpyXIP17hRSC5HQ=s60",
+      "is_subject_to_whitelist": false,
+      "large_image_url": "https://lh3.googleusercontent.com/BBj09xD7R4bBtg1lgnAAS9_TfoYXKwMtudlk-0fVljlURaK7BWcARCpkM-1LGNGTAcsGO6V1TgrtmQFvCo8uVYW_QEfASK-9j6Nr=s300",
+      "medium_username": "the-ethereum-name-service",
+      "name": "ENS: Ethereum Name Service",
+      "only_proxied_transfers": false,
+      "opensea_buyer_fee_basis_points": "0",
+      "opensea_seller_fee_basis_points": "250",
+      "payout_address": null,
+      "require_email": false,
+      "short_description": null,
+      "slug": "ens",
+      "telegram_url": null,
+      "twitter_username": "ensdomains",
+      "instagram_username": null,
+      "wiki_url": null,
+      "owned_asset_count": 1
+    }
+  ]
