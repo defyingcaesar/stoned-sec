@@ -1,419 +1,77 @@
-2021-10-12 18:39:40,352:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
-2021-10-12 18:39:40,352:DEBUG:discord.client: on_ready has successfully been registered as an event
-2021-10-12 18:39:40,353:DEBUG:discord.client: on_member_join has successfully been registered as an event
-2021-10-12 18:39:40,353:DEBUG:discord.client: on_message has successfully been registered as an event
-2021-10-12 18:39:40,354:INFO:discord.client: logging in using static token
-2021-10-12 18:39:40,821:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me with None has returned 200
-2021-10-12 18:39:40,823:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me has received {'id': '884785542875738142', 'username': 'Ech Helper Bot', 'avatar': None, 'discriminator': '6915', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
-2021-10-12 18:39:40,969:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
-2021-10-12 18:39:40,969:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
-2021-10-12 18:39:41,489:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
-2021-10-12 18:39:41,489:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:39:41,489:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-wsrp",{"micros":0.0}]']}}
-2021-10-12 18:39:41,489:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:39:41,490:DEBUG:discord.client: Dispatching event socket_raw_send
-2021-10-12 18:39:41,494:DEBUG:discord.client: Dispatching event socket_raw_send
-2021-10-12 18:39:41,494:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
-2021-10-12 18:39:41,778:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:39:41,778:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:39:41,779:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:39:41,863:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:39:41,863:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'Ech Helper Bot', 'mfa_enabled': False, 'id': '884785542875738142', 'flags': 0, 'email': None, 'discriminator': '6915', 'bot': True, 'avatar': None}, 'session_id': 'e5c1a4ee6de94361684f9195eed23203', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '847772611287187456'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['southafrica', 'dubai', 'india', 'brazil', 'buenos-aires'], 'application': {'id': '884785542875738142', 'flags': 303104}, '_trace': ['["gateway-prd-main-wsrp",{"micros":58291,"calls":["discord-sessions-blue-prd-2-103",{"micros":57136,"calls":["start_session",{"micros":30176,"calls":["api-prd-main-6c9j",{"micros":26230,"calls":["get_user",{"micros":2269},"add_authorized_ip",{"micros":1792},"get_guilds",{"micros":4911},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":26093,"calls":[]}]}]}]']}}
-2021-10-12 18:39:41,864:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:39:41,864:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-wsrp",{"micros":58291,"calls":["discord-sessions-blue-prd-2-103",{"micros":57136,"calls":["start_session",{"micros":30176,"calls":["api-prd-main-6c9j",{"micros":26230,"calls":["get_user",{"micros":2269},"add_authorized_ip",{"micros":1792},"get_guilds",{"micros":4911},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":26093,"calls":[]}]}]}] (Session ID: e5c1a4ee6de94361684f9195eed23203).
-2021-10-12 18:39:41,883:DEBUG:discord.client: Dispatching event connect
-2021-10-12 18:39:41,884:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:39:41,884:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'roles': [{'unicode_emoji': None, 'position': 0, 'permissions_new': '412433698369', 'permissions': 116837953, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '847772611287187456', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'position': 1, 'permissions_new': '1090921168895', 'permissions': 2146959359, 'name': 'Sudo', 'mentionable': False, 'managed': False, 'id': '892779527405699103', 'icon': None, 'hoist': False, 'color': 3447003}], 'explicit_content_filter': 0, 'emojis': [], 'name': 'Ech Discord', 'stage_instances': [], 'max_members': 250000, 'guild_scheduled_events': [], 'mfa_level': 0, 'description': None, 'members': [{'user': {'username': 'Ech Helper Bot', 'id': '884785542875738142', 'discriminator': '6915', 'bot': True, 'avatar': None}, 'roles': ['892779527405699103'], 'mute': False, 'joined_at': '2021-10-11T20:42:05.717000+00:00', 'hoisted_role': None, 'deaf': False}], 'features': [], 'verification_level': 3, 'afk_timeout': 300, 'banner': None, 'joined_at': '2021-10-11T20:42:05.717000+00:00', 'lazy': True, 'nsfw': False, 'default_message_notifications': 0, 'member_count': 7, 'icon': 'da939f23570c567ee1077d1b622c7929', 'premium_subscription_count': 0, 'splash': None, 'system_channel_flags': 0, 'premium_tier': 0, 'unavailable': False, 'owner_id': '618799815412678686', 'stickers': [], 'region': 'southafrica', 'system_channel_id': None, 'threads': [], 'rules_channel_id': None, 'presences': [], 'nsfw_level': 0, 'afk_channel_id': None, 'premium_progress_bar_enabled': False, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'Ixtg7DfoXQ4'}, 'metadata': {'omitted': False, 'hash': 'Eyn/g+fmV48'}, 'channels': {'omitted': False, 'hash': '22EPGg24poM'}}, 'preferred_locale': 'en-US', 'public_updates_channel_id': None, 'embedded_activities': [], 'id': '847772611287187456', 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '847772611287187458'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '847772611287187459'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '847772611287187459', 'name': 'General', 'last_message_id': None, 'id': '847772611751837706', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [{'type': 'role', 'id': '847772611287187456', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '847772611287187458', 'nsfw': False, 'name': 'bot-testing', 'last_message_id': '897523875284406334', 'id': '897214628021542973', 'default_auto_archive_duration': 1440}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '847772611287187458', 'nsfw': False, 'name': 'design', 'last_message_id': None, 'id': '897302723991601174'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'parent_id': '847772611287187458', 'nsfw': False, 'name': 'development', 'last_message_id': None, 'id': '897302768698658816'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [], 'parent_id': '847772611287187458', 'nsfw': False, 'name': 'team', 'last_message_id': None, 'id': '897302925800505426'}], 'application_command_count': 0, 'voice_states': [], 'vanity_url_code': None, 'large': False, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'application_id': None, 'discovery_splash': None, 'max_video_channel_users': 25}}
-2021-10-12 18:39:41,885:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:39:41,885:DEBUG:discord.client: Dispatching event guild_available
-2021-10-12 18:39:43,887:DEBUG:discord.client: Dispatching event ready
-2021-10-12 18:39:43,888:DEBUG:discord.gateway: Sending "{"op":3,"d":{"game":{"type":0,"name":"your mom","timestamps":{}},"afk":false,"since":0.0,"status":"online"}}" to change status
-2021-10-12 18:39:43,888:DEBUG:discord.client: Dispatching event socket_raw_send
-2021-10-12 18:39:59,105:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:39:59,106:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-10-12T16:39:58.905000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '897524007513882624', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['892779527405699103'], 'mute': False, 'joined_at': '2021-05-28T09:45:41.424000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '897524008872988712', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '69', 'components': [], 'channel_id': '897214628021542973', 'author': {'username': 'DefyingCaesar', 'public_flags': 0, 'id': '618799815412678686', 'discriminator': '7057', 'avatar': '9f47a3becf1cacbb69071645e68878f2'}, 'attachments': [], 'guild_id': '847772611287187456'}}
-2021-10-12 18:39:59,106:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:39:59,107:DEBUG:discord.client: Dispatching event message
-2021-10-12 18:39:59,592:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:39:59,592:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-10-12T16:39:59.366000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['892779527405699103'], 'mute': False, 'joined_at': '2021-10-11T20:42:05.717000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '897524010806546433', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': ':eyes: :eyes: :eyes:', 'components': [], 'channel_id': '897214628021542973', 'author': {'username': 'Ech Helper Bot', 'public_flags': 0, 'id': '884785542875738142', 'discriminator': '6915', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '847772611287187456'}}
-2021-10-12 18:39:59,592:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:39:59,592:DEBUG:discord.client: Dispatching event message
-2021-10-12 18:39:59,623:DEBUG:discord.http: POST https://discord.com/api/v7/channels/897214628021542973/messages with {"content":":eyes: :eyes: :eyes:"} has returned 200
-2021-10-12 18:39:59,624:DEBUG:discord.http: POST https://discord.com/api/v7/channels/897214628021542973/messages has received {'id': '897524010806546433', 'type': 0, 'content': ':eyes: :eyes: :eyes:', 'channel_id': '897214628021542973', 'author': {'id': '884785542875738142', 'username': 'Ech Helper Bot', 'avatar': None, 'discriminator': '6915', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2021-10-12T16:39:59.366000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
-2021-10-12 18:40:22,745:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:40:23,037:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:40:23,037:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:40:23,037:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:41:03,997:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:41:04,296:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:41:04,297:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:41:04,297:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:41:45,248:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:41:45,551:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:41:45,552:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:41:45,552:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:42:26,499:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:42:26,790:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:42:26,790:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:42:26,790:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:43:07,750:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:43:08,047:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:43:08,048:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:43:08,048:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:43:49,002:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:43:49,293:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:43:49,293:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:43:49,293:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:44:30,254:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:44:30,544:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:44:30,544:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:44:30,544:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:45:11,505:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:45:11,800:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:45:11,801:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:45:11,801:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:45:52,756:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:45:53,047:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:45:53,048:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:45:53,048:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:46:34,008:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:46:34,303:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:46:34,304:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:46:34,304:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:47:15,259:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:47:15,549:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:47:15,550:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:47:15,550:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:47:56,510:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:47:56,828:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:47:56,828:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:47:56,828:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:48:37,761:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:48:38,053:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:48:38,054:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:48:38,054:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:49:19,012:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:49:19,302:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:49:19,302:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:49:19,302:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:50:00,263:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:50:00,553:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:50:00,554:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:50:00,554:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:50:41,515:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:50:41,809:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:50:41,809:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:50:41,809:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:51:22,766:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:51:23,060:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:51:23,060:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:51:23,060:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:52:04,018:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:52:04,307:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:52:04,308:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:52:04,308:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:52:45,269:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:52:45,558:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:52:45,559:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:52:45,559:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:53:26,521:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:53:26,828:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:53:26,828:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:53:26,828:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:54:07,773:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:54:08,063:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:54:08,063:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:54:08,063:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:54:49,025:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:54:49,318:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:54:49,319:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:54:49,319:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:55:30,277:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:55:30,570:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:55:30,571:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:55:30,572:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:56:11,529:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:56:11,816:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:56:11,816:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:56:11,816:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:56:52,780:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:56:53,071:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:56:53,072:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:56:53,072:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:57:34,032:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:57:34,322:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:57:34,323:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:57:34,323:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:58:15,283:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:58:15,575:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:58:15,576:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:58:15,576:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:58:56,535:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:58:56,827:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:58:56,828:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:58:56,828:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 18:59:37,787:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 18:59:38,100:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 18:59:38,100:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 18:59:38,100:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 19:00:19,039:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 19:00:19,331:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 19:00:19,331:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 19:00:19,331:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 19:01:00,290:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 19:01:00,581:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 19:01:00,582:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 19:01:00,582:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 19:01:41,541:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 19:01:41,834:DEBUG:discord.client: Dispatching event socket_raw_receive
-2021-10-12 19:01:41,834:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2021-10-12 19:01:41,835:DEBUG:discord.client: Dispatching event socket_response
-2021-10-12 19:02:22,794:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
-2021-10-12 19:02:41,851:INFO:discord.gateway: Timed out receiving packet. Attempting a reconnect.
-2021-10-12 19:02:41,854:INFO:discord.client: Got a request to RESUME the websocket.
-2021-10-12 19:02:41,854:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:02:41,912:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:02:41,912:ERROR:discord.client: Attempting a reconnect in 0.40s
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 999, in _create_direct_connection
-    hosts = await asyncio.shield(host_resolved)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 865, in _resolve_host
-    addrs = await self._resolver.resolve(host, port, family=self._family)
-  File "/usr/lib/python3/dist-packages/aiohttp/resolver.py", line 31, in resolve
-    infos = await self._loop.getaddrinfo(
-  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
-    return await self.run_in_executor(
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/client.py", line 563, in connect
-    self.ws = await asyncio.wait_for(coro, timeout=60.0)
-  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
-    return fut.result()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/gateway.py", line 305, in from_client
-    gateway = gateway or await client.http.get_gateway()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 967, in get_gateway
-    data = await self.request(Route('GET', '/gateway'))
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 192, in request
-    async with self.__session.request(method, url, **kwargs) as r:
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 1117, in __aenter__
-    self._resp = await self._coro
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 520, in _request
-    conn = await self._connector.connect(
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 535, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 892, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
-    raise ClientConnectorError(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
-2021-10-12 19:02:42,345:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:02:42,345:ERROR:discord.client: Attempting a reconnect in 3.58s
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 999, in _create_direct_connection
-    hosts = await asyncio.shield(host_resolved)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 865, in _resolve_host
-    addrs = await self._resolver.resolve(host, port, family=self._family)
-  File "/usr/lib/python3/dist-packages/aiohttp/resolver.py", line 31, in resolve
-    infos = await self._loop.getaddrinfo(
-  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
-    return await self.run_in_executor(
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/client.py", line 563, in connect
-    self.ws = await asyncio.wait_for(coro, timeout=60.0)
-  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
-    return fut.result()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/gateway.py", line 305, in from_client
-    gateway = gateway or await client.http.get_gateway()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 967, in get_gateway
-    data = await self.request(Route('GET', '/gateway'))
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 192, in request
-    async with self.__session.request(method, url, **kwargs) as r:
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 1117, in __aenter__
-    self._resp = await self._coro
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 520, in _request
-    conn = await self._connector.connect(
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 535, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 892, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
-    raise ClientConnectorError(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
-2021-10-12 19:02:45,938:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:02:45,938:ERROR:discord.client: Attempting a reconnect in 0.45s
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 999, in _create_direct_connection
-    hosts = await asyncio.shield(host_resolved)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 865, in _resolve_host
-    addrs = await self._resolver.resolve(host, port, family=self._family)
-  File "/usr/lib/python3/dist-packages/aiohttp/resolver.py", line 31, in resolve
-    infos = await self._loop.getaddrinfo(
-  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
-    return await self.run_in_executor(
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/client.py", line 563, in connect
-    self.ws = await asyncio.wait_for(coro, timeout=60.0)
-  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
-    return fut.result()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/gateway.py", line 305, in from_client
-    gateway = gateway or await client.http.get_gateway()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 967, in get_gateway
-    data = await self.request(Route('GET', '/gateway'))
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 192, in request
-    async with self.__session.request(method, url, **kwargs) as r:
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 1117, in __aenter__
-    self._resp = await self._coro
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 520, in _request
-    conn = await self._connector.connect(
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 535, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 892, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
-    raise ClientConnectorError(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
-2021-10-12 19:02:46,394:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:02:46,394:ERROR:discord.client: Attempting a reconnect in 14.20s
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 999, in _create_direct_connection
-    hosts = await asyncio.shield(host_resolved)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 865, in _resolve_host
-    addrs = await self._resolver.resolve(host, port, family=self._family)
-  File "/usr/lib/python3/dist-packages/aiohttp/resolver.py", line 31, in resolve
-    infos = await self._loop.getaddrinfo(
-  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
-    return await self.run_in_executor(
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/client.py", line 563, in connect
-    self.ws = await asyncio.wait_for(coro, timeout=60.0)
-  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
-    return fut.result()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/gateway.py", line 305, in from_client
-    gateway = gateway or await client.http.get_gateway()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 967, in get_gateway
-    data = await self.request(Route('GET', '/gateway'))
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 192, in request
-    async with self.__session.request(method, url, **kwargs) as r:
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 1117, in __aenter__
-    self._resp = await self._coro
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 520, in _request
-    conn = await self._connector.connect(
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 535, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 892, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
-    raise ClientConnectorError(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
-2021-10-12 19:03:00,622:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:03:00,622:ERROR:discord.client: Attempting a reconnect in 15.18s
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 999, in _create_direct_connection
-    hosts = await asyncio.shield(host_resolved)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 865, in _resolve_host
-    addrs = await self._resolver.resolve(host, port, family=self._family)
-  File "/usr/lib/python3/dist-packages/aiohttp/resolver.py", line 31, in resolve
-    infos = await self._loop.getaddrinfo(
-  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
-    return await self.run_in_executor(
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/client.py", line 563, in connect
-    self.ws = await asyncio.wait_for(coro, timeout=60.0)
-  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
-    return fut.result()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/gateway.py", line 305, in from_client
-    gateway = gateway or await client.http.get_gateway()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 967, in get_gateway
-    data = await self.request(Route('GET', '/gateway'))
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 192, in request
-    async with self.__session.request(method, url, **kwargs) as r:
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 1117, in __aenter__
-    self._resp = await self._coro
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 520, in _request
-    conn = await self._connector.connect(
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 535, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 892, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
-    raise ClientConnectorError(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
-2021-10-12 19:03:15,823:DEBUG:discord.client: Dispatching event disconnect
-2021-10-12 19:03:15,823:ERROR:discord.client: Attempting a reconnect in 13.38s
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 999, in _create_direct_connection
-    hosts = await asyncio.shield(host_resolved)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 865, in _resolve_host
-    addrs = await self._resolver.resolve(host, port, family=self._family)
-  File "/usr/lib/python3/dist-packages/aiohttp/resolver.py", line 31, in resolve
-    infos = await self._loop.getaddrinfo(
-  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
-    return await self.run_in_executor(
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/client.py", line 563, in connect
-    self.ws = await asyncio.wait_for(coro, timeout=60.0)
-  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
-    return fut.result()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/gateway.py", line 305, in from_client
-    gateway = gateway or await client.http.get_gateway()
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 967, in get_gateway
-    data = await self.request(Route('GET', '/gateway'))
-  File "/home/jethro/.local/lib/python3.9/site-packages/discord/http.py", line 192, in request
-    async with self.__session.request(method, url, **kwargs) as r:
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 1117, in __aenter__
-    self._resp = await self._coro
-  File "/usr/lib/python3/dist-packages/aiohttp/client.py", line 520, in _request
-    conn = await self._connector.connect(
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 535, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 892, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/usr/lib/python3/dist-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
-    raise ClientConnectorError(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
+2021-10-14 12:55:56,362:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-10-14 12:55:56,362:DEBUG:discord.client: on_ready has successfully been registered as an event
+2021-10-14 12:55:56,363:DEBUG:discord.client: on_member_join has successfully been registered as an event
+2021-10-14 12:55:56,363:DEBUG:discord.client: on_message has successfully been registered as an event
+2021-10-14 12:55:56,363:INFO:discord.client: logging in using static token
+2021-10-14 12:55:56,842:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me with None has returned 200
+2021-10-14 12:55:56,842:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me has received {'id': '897843663877591081', 'username': 'test-bot', 'avatar': '0839de3163b1da5ee2e777f266a4643b', 'discriminator': '7480', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+2021-10-14 12:55:56,878:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2021-10-14 12:55:56,878:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2021-10-14 12:55:57,307:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2021-10-14 12:55:57,307:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:55:57,308:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-c6n8",{"micros":0.0}]']}}
+2021-10-14 12:55:57,308:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:55:57,308:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-10-14 12:55:57,309:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-10-14 12:55:57,309:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-10-14 12:55:57,585:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:55:57,586:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-10-14 12:55:57,586:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:55:57,673:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:55:57,673:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'test-bot', 'mfa_enabled': False, 'id': '897843663877591081', 'flags': 0, 'email': None, 'discriminator': '7480', 'bot': True, 'avatar': '0839de3163b1da5ee2e777f266a4643b'}, 'session_id': '15f90286ef55824ae25a399fa74d13a4', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '897778343716458496'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['southafrica', 'dubai', 'india', 'brazil', 'buenos-aires'], 'application': {'id': '897843663877591081', 'flags': 262144}, '_trace': ['["gateway-prd-main-c6n8",{"micros":88344,"calls":["discord-sessions-green-prd-2-92",{"micros":87553,"calls":["start_session",{"micros":44872,"calls":["api-prd-main-zd0w",{"micros":41548,"calls":["get_user",{"micros":4319},"add_authorized_ip",{"micros":1459},"get_guilds",{"micros":7760},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":42093,"calls":[]}]}]}]']}}
+2021-10-14 12:55:57,673:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:55:57,673:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-c6n8",{"micros":88344,"calls":["discord-sessions-green-prd-2-92",{"micros":87553,"calls":["start_session",{"micros":44872,"calls":["api-prd-main-zd0w",{"micros":41548,"calls":["get_user",{"micros":4319},"add_authorized_ip",{"micros":1459},"get_guilds",{"micros":7760},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":42093,"calls":[]}]}]}] (Session ID: 15f90286ef55824ae25a399fa74d13a4).
+2021-10-14 12:55:57,694:DEBUG:discord.client: Dispatching event connect
+2021-10-14 12:55:57,697:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:55:57,700:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'owner_id': '618799815412678686', 'rules_channel_id': None, 'name': 'Stoned Web Discord', 'public_updates_channel_id': None, 'nsfw': False, 'application_command_count': 0, 'description': None, 'stickers': [], 'premium_subscription_count': 0, 'splash': None, 'application_id': None, 'roles': [{'unicode_emoji': None, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '897778343716458496', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'position': 1, 'permissions_new': '1071698660937', 'permissions': 104320585, 'name': 'Sudo', 'mentionable': False, 'managed': False, 'id': '897778415443275786', 'icon': None, 'hoist': False, 'color': 0}], 'system_channel_flags': 0, 'member_count': 5, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '+aec02MTxBA'}, 'metadata': {'omitted': False, 'hash': 'd6KFqQEDXN0'}, 'channels': {'omitted': False, 'hash': 'DcpC1okdv0M'}}, 'stage_instances': [], 'region': 'southafrica', 'default_message_notifications': 0, 'guild_scheduled_events': [], 'afk_timeout': 300, 'premium_tier': 0, 'premium_progress_bar_enabled': False, 'banner': None, 'voice_states': [{'user_id': '494033379365224448', 'suppress': False, 'session_id': 'b1bb0b778a598fb95f2be630b6bba893', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'request_to_speak_timestamp': None, 'mute': False, 'deaf': False, 'channel_id': '897778343716458500'}, {'user_id': '618799815412678686', 'suppress': False, 'session_id': '3d3bc522397094a35922e77c6d30255d', 'self_video': False, 'self_stream': True, 'self_mute': False, 'self_deaf': False, 'request_to_speak_timestamp': None, 'mute': False, 'deaf': False, 'channel_id': '897778343716458500'}], 'lazy': True, 'explicit_content_filter': 0, 'emojis': [], 'mfa_level': 0, 'max_video_channel_users': 25, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '897778343716458497'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '897778343716458498'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '897778343716458497', 'name': 'general', 'last_message_id': '897981013903441951', 'id': '897778343716458499'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '897778343716458498', 'name': 'General', 'last_message_id': None, 'id': '897778343716458500', 'bitrate': 64000}], 'nsfw_level': 0, 'threads': [], 'discovery_splash': None, 'icon': 'c5b70626e6ef129222d088c3a514822b', 'preferred_locale': 'en-US', 'vanity_url_code': None, 'id': '897778343716458496', 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'embedded_activities': [], 'afk_channel_id': None, 'large': False, 'presences': [], 'features': [], 'joined_at': '2021-10-13T13:51:52.729000+00:00', 'verification_level': 0, 'system_channel_id': '897778343716458499', 'unavailable': False, 'members': [{'user': {'username': 'DefyingCaesar', 'id': '618799815412678686', 'discriminator': '7057', 'avatar': '9f47a3becf1cacbb69071645e68878f2'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:37.060000+00:00', 'hoisted_role': None, 'deaf': False}, {'user': {'username': 'Bitwise', 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, {'user': {'username': 'DefyingCaesar', 'id': '618799815412678686', 'discriminator': '7057', 'avatar': '9f47a3becf1cacbb69071645e68878f2'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:37.060000+00:00', 'hoisted_role': None, 'deaf': False}, {'user': {'username': 'Bitwise', 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, {'user': {'username': 'test-bot', 'id': '897843663877591081', 'discriminator': '7480', 'bot': True, 'avatar': '0839de3163b1da5ee2e777f266a4643b'}, 'roles': [], 'nick': '🚶95 gwei', 'mute': False, 'joined_at': '2021-10-13T13:51:52.729000+00:00', 'hoisted_role': None, 'deaf': False}], 'max_members': 250000}}
+2021-10-14 12:55:57,703:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:55:57,706:DEBUG:discord.client: Dispatching event guild_available
+2021-10-14 12:55:59,711:DEBUG:discord.client: Dispatching event ready
+2021-10-14 12:55:59,711:DEBUG:discord.gateway: Sending "{"op":3,"d":{"game":{"type":0,"name":"your mom","timestamps":{}},"afk":false,"since":0.0,"status":"online"}}" to change status
+2021-10-14 12:55:59,711:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-10-14 12:56:02,872:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:56:02,872:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-10-14T10:56:02.707000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '898162229092810752', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:37.060000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '898162230116384798', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '!floor', 'components': [], 'channel_id': '897778343716458499', 'author': {'username': 'DefyingCaesar', 'public_flags': 0, 'id': '618799815412678686', 'discriminator': '7057', 'avatar': '9f47a3becf1cacbb69071645e68878f2'}, 'attachments': [], 'guild_id': '897778343716458496'}}
+2021-10-14 12:56:02,872:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:56:02,872:DEBUG:discord.client: Dispatching event message
+2021-10-14 12:56:04,442:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:56:04,442:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-10-14T10:56:04.270000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'nick': '🚶95 gwei', 'mute': False, 'joined_at': '2021-10-13T13:51:52.729000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '898162236672053258', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '[{"primary_asset_contracts":[{"address":"0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85","asset_contract_type":"non-fungible","created_date":"2019-05-08T21:59:29.327544","name":"ENS","nft_version":"3.0","opensea_version":null,"owner":279872,"schema_name":"ERC721","symbol":"ENS","total_supply":null,"description":"Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.","external_link":"https://ens.domains","image_url":"https://lh3.googleusercontent.com/0cOqWoYA7xL9CkUjGlxsjreSYBdrUBE0c6EO1COG4XE8UeP-Z30ckqUNiL872zHQHQU5MUNMNhfDpyXIP17hRSC5HQ=s60","default_to_fiat":false,"dev_buyer_fee_basis_points":0,"dev_seller_fee_basis_points":0,"only_proxied_transfers":false,"opensea_buyer_fee_basis_points":0,"opensea_seller_fee_basis_points":250,"buyer_fee_basis_points":0,"seller_fee_basis_points":250,"payout_address":null}],"traits":{"Length":{"min":3,"max":10000},"Expiration Date":{"min":1588550400,"max":4829262331},"Registration Date":{"min":1580763488,"max":1634157153}},"stats":{"one_day_volume":7.37949999999999,"one_day_change":-0.9051112109060213,"one_day_sales":49,"one_day_average_price":0.15060204081632633,"seven_day_volume":547.238531333931,"seven_day_change":7.480880680992433,"seven_day_sales":242,"seven_day_average_price":2.2613162451815327,"thirty_day_volume":727.892589371611,"thirty_day_change":0.329089369970023,"thirty_day_sales":690,"thirty_day_average_price":1.0549167961907406,"total_volume":9372.6717818693,"total_sales":13037,"total_supply":281762,"count":281762,"num_owners":103537,"average_price":0.7189285711336427,"num_reports":79,"market_cap":637152.9878748391,"floor_price":0.002}}]', 'components': [], 'channel_id': '897778343716458499', 'author': {'username': 'test-bot', 'public_flags': 0, 'id': '897843663877591081', 'discriminator': '7480', 'bot': True, 'avatar': '0839de3163b1da5ee2e777f266a4643b'}, 'attachments': [], 'guild_id': '897778343716458496'}}
+2021-10-14 12:56:04,442:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:56:04,443:DEBUG:discord.client: Dispatching event message
+2021-10-14 12:56:04,576:DEBUG:discord.http: POST https://discord.com/api/v7/channels/897778343716458499/messages with {"content":"[{\"primary_asset_contracts\":[{\"address\":\"0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85\",\"asset_contract_type\":\"non-fungible\",\"created_date\":\"2019-05-08T21:59:29.327544\",\"name\":\"ENS\",\"nft_version\":\"3.0\",\"opensea_version\":null,\"owner\":279872,\"schema_name\":\"ERC721\",\"symbol\":\"ENS\",\"total_supply\":null,\"description\":\"Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.\",\"external_link\":\"https://ens.domains\",\"image_url\":\"https://lh3.googleusercontent.com/0cOqWoYA7xL9CkUjGlxsjreSYBdrUBE0c6EO1COG4XE8UeP-Z30ckqUNiL872zHQHQU5MUNMNhfDpyXIP17hRSC5HQ=s60\",\"default_to_fiat\":false,\"dev_buyer_fee_basis_points\":0,\"dev_seller_fee_basis_points\":0,\"only_proxied_transfers\":false,\"opensea_buyer_fee_basis_points\":0,\"opensea_seller_fee_basis_points\":250,\"buyer_fee_basis_points\":0,\"seller_fee_basis_points\":250,\"payout_address\":null}],\"traits\":{\"Length\":{\"min\":3,\"max\":10000},\"Expiration Date\":{\"min\":1588550400,\"max\":4829262331},\"Registration Date\":{\"min\":1580763488,\"max\":1634157153}},\"stats\":{\"one_day_volume\":7.37949999999999,\"one_day_change\":-0.9051112109060213,\"one_day_sales\":49,\"one_day_average_price\":0.15060204081632633,\"seven_day_volume\":547.238531333931,\"seven_day_change\":7.480880680992433,\"seven_day_sales\":242,\"seven_day_average_price\":2.2613162451815327,\"thirty_day_volume\":727.892589371611,\"thirty_day_change\":0.329089369970023,\"thirty_day_sales\":690,\"thirty_day_average_price\":1.0549167961907406,\"total_volume\":9372.6717818693,\"total_sales\":13037,\"total_supply\":281762,\"count\":281762,\"num_owners\":103537,\"average_price\":0.7189285711336427,\"num_reports\":79,\"market_cap\":637152.9878748391,\"floor_price\":0.002}}]"} has returned 200
+2021-10-14 12:56:04,577:DEBUG:discord.http: POST https://discord.com/api/v7/channels/897778343716458499/messages has received {'id': '898162236672053258', 'type': 0, 'content': '[{"primary_asset_contracts":[{"address":"0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85","asset_contract_type":"non-fungible","created_date":"2019-05-08T21:59:29.327544","name":"ENS","nft_version":"3.0","opensea_version":null,"owner":279872,"schema_name":"ERC721","symbol":"ENS","total_supply":null,"description":"Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.","external_link":"https://ens.domains","image_url":"https://lh3.googleusercontent.com/0cOqWoYA7xL9CkUjGlxsjreSYBdrUBE0c6EO1COG4XE8UeP-Z30ckqUNiL872zHQHQU5MUNMNhfDpyXIP17hRSC5HQ=s60","default_to_fiat":false,"dev_buyer_fee_basis_points":0,"dev_seller_fee_basis_points":0,"only_proxied_transfers":false,"opensea_buyer_fee_basis_points":0,"opensea_seller_fee_basis_points":250,"buyer_fee_basis_points":0,"seller_fee_basis_points":250,"payout_address":null}],"traits":{"Length":{"min":3,"max":10000},"Expiration Date":{"min":1588550400,"max":4829262331},"Registration Date":{"min":1580763488,"max":1634157153}},"stats":{"one_day_volume":7.37949999999999,"one_day_change":-0.9051112109060213,"one_day_sales":49,"one_day_average_price":0.15060204081632633,"seven_day_volume":547.238531333931,"seven_day_change":7.480880680992433,"seven_day_sales":242,"seven_day_average_price":2.2613162451815327,"thirty_day_volume":727.892589371611,"thirty_day_change":0.329089369970023,"thirty_day_sales":690,"thirty_day_average_price":1.0549167961907406,"total_volume":9372.6717818693,"total_sales":13037,"total_supply":281762,"count":281762,"num_owners":103537,"average_price":0.7189285711336427,"num_reports":79,"market_cap":637152.9878748391,"floor_price":0.002}}]', 'channel_id': '897778343716458499', 'author': {'id': '897843663877591081', 'username': 'test-bot', 'avatar': '0839de3163b1da5ee2e777f266a4643b', 'discriminator': '7480', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2021-10-14T10:56:04.270000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+2021-10-14 12:56:38,560:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-10-14 12:56:38,839:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:56:38,840:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-10-14 12:56:38,840:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:57:02,049:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:57:02,049:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-10-14T10:57:01.880000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '898162403454222336', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '898162478305931324', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'from types import SimpleNamespace', 'components': [], 'channel_id': '897778343716458499', 'author': {'username': 'Bitwise', 'public_flags': 0, 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'attachments': [], 'guild_id': '897778343716458496'}}
+2021-10-14 12:57:02,049:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:57:02,050:DEBUG:discord.client: Dispatching event message
+2021-10-14 12:57:19,811:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-10-14 12:57:20,092:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:57:20,092:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-10-14 12:57:20,092:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:58:01,063:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-10-14 12:58:01,342:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:58:01,342:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-10-14 12:58:01,342:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:58:42,314:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-10-14 12:58:42,588:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:58:42,588:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-10-14 12:58:42,589:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:58:58,915:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:58:58,919:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 6, 'op': 0, 'd': {'user_id': '494033379365224448', 'timestamp': 1634209138, 'member': {'user': {'username': 'Bitwise', 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '897778343716458499', 'guild_id': '897778343716458496'}}
+2021-10-14 12:58:58,919:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:59:11,415:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:59:11,415:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 7, 'op': 0, 'd': {'user_id': '494033379365224448', 'timestamp': 1634209151, 'member': {'user': {'username': 'Bitwise', 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '897778343716458499', 'guild_id': '897778343716458496'}}
+2021-10-14 12:59:11,415:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:59:23,415:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:59:23,415:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 8, 'op': 0, 'd': {'user_id': '494033379365224448', 'timestamp': 1634209163, 'member': {'user': {'username': 'Bitwise', 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '897778343716458499', 'guild_id': '897778343716458496'}}
+2021-10-14 12:59:23,415:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:59:23,565:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2021-10-14 12:59:23,847:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:59:23,848:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-10-14 12:59:23,848:DEBUG:discord.client: Dispatching event socket_response
+2021-10-14 12:59:50,010:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-10-14 12:59:50,015:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 9, 'op': 0, 'd': {'user_id': '494033379365224448', 'timestamp': 1634209188, 'member': {'user': {'username': 'Bitwise', 'id': '494033379365224448', 'discriminator': '3529', 'avatar': '506eb1491b78700b805c29cac27c9e2f'}, 'roles': ['897778415443275786'], 'mute': False, 'joined_at': '2021-10-13T09:30:50.896000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '897778343716458499', 'guild_id': '897778343716458496'}}
+2021-10-14 12:59:50,015:DEBUG:discord.client: Dispatching event socket_response

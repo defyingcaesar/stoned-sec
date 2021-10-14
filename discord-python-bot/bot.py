@@ -3,6 +3,9 @@ import random
 import discord
 import logging
 from dotenv import load_dotenv
+import requests
+import json
+from types import SimpleNamespace
 
 # Logging setup
 logger = logging.getLogger('discord')
@@ -14,6 +17,7 @@ logger.addHandler(handler)
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
+FLOOR = os.getenv('FLOOR_API')
 
 client = discord.Client()
 
@@ -58,5 +62,11 @@ async def on_message(message):
 
     if message.content == '69':
         await message.channel.send(':eyes: :eyes: :eyes:')
+    
+    if message.content =='!floor':
+        url = "https://61675396ba841a001727c2de.mockapi.io/api/v1/collections"
+        response = requests.get(url)
+        await message.channel.send(response.text)
+        
         
 client.run(TOKEN)
